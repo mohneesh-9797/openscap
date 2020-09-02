@@ -61,4 +61,6 @@ script:
   - ctest --output-on-failure
   - (cd .. && sonar-scanner) || true  # Will always fail builds on forked repositories.
 after_success:
-  - curl -s https://codecov.io/bash > cov.sh && bash cov.sh -x "$GCOV"
+  - if [[ "${TRAVIS_CPU_ARCH}" == "osx" ]]; then 
+      curl -s https://codecov.io/bash > cov.sh && bash cov.sh -x "$GCOV";
+    fi
