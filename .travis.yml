@@ -12,28 +12,28 @@ addons:
     sonarcloud:
         organization: "openscap"
     apt:
-        packages:
-            - lcov
-            - libdbus-1-dev
-            - libdbus-glib-1-dev
-            - libcurl4-openssl-dev
-            - libgcrypt-dev
-            - libselinux1-dev
-            - libgconf2-dev
-            - libacl1-dev
-            - libblkid-dev
-            - libcap-dev
-            - libxml2-dev
-            - swig
-            - libxml-parser-perl
-            - libxml-xpath-perl
-            - libperl-dev
-            - librpm-dev
-            - swig
-            - librtmp-dev
-            - xsltproc
-            - rpm-common
-            - lua50
+       packages:
+           - lcov
+           - libdbus-1-dev
+           - libdbus-glib-1-dev
+           - libcurl4-openssl-dev
+           - libgcrypt-dev
+           - libselinux1-dev
+           - libgconf2-dev
+           - libacl1-dev
+           - libblkid-dev
+           - libcap-dev
+           - libxml2-dev
+           - swig
+           - libxml-parser-perl
+           - libxml-xpath-perl
+           - libperl-dev
+           - librpm-dev
+           - swig
+           - librtmp-dev
+           - xsltproc
+           - rpm-common
+           - lua50
 matrix:
   include:
     - os: osx
