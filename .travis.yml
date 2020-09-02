@@ -49,3 +49,5 @@ matrix:
       script:
         - cmake -DENABLE_PROBES=false ../
         - make -j 4
+before_script:
+  - cd build
