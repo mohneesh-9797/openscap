@@ -54,7 +54,7 @@ before_script:
 script:
   - cmake -DCMAKE_BUILD_TYPE=Debug ../
   - if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]]; then 
-      build-wrapper-linux-aarch64 --out-dir bw-output make all || make all;  # build-wrapper won't work on forked repositories.
+      build-wrapper-linux-aarch64 --out-dir bw-output make all;  # build-wrapper won't work on forked repositories.
     fi
   - build-wrapper-linux-aarch64 --out-dir bw-output make all || make all  # build-wrapper won't work on forked repositories.
   - ctest --output-on-failure
