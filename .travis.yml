@@ -9,6 +9,8 @@ cache:
     - '$HOME/.sonar/cache'
 
 addons:
+    sonarcloud:
+       organization: "openscap"
     apt:
        packages:
            - lcov
